@@ -19,7 +19,7 @@ X_scaled = scaler.fit_transform(X)
 lasso_reg = Lasso()
 
 # Fit the model.
-lasso_reg(X_scaled, y)
+lasso_reg.fit(X_scaled, y)
 
 # Retrieve and print out the coefficients from the regression model.
 reg_coef = lasso_reg.coef_
